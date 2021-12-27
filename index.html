@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+  <style>
+  /* 自navbar訂背景色 */
+  :root{
+    --bs-coffee-rgb:60, 40, 0;
+    --bs--ss-rgb:255, 153, 7;
+  }
+  .bg-coffee{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-coffee-rgb), var(--bs-bg-opacity)) !important;
+  }
+  .bg-ss{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs--ss-rgb), var(--bs-bg-opacity)) !important;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-5" href="#">泰山咖啡莊園</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Lin">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="Lin">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#section01">菜單餐點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section02">周邊景點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#section03">莊園位置</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#section04">聯絡我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="#section05">
+              咖啡故事
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="section01" class="mt-5" style="margin-top: 55px;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img class="d-block w-100" src="https://picsum.photos/1200/400/?random=1">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://picsum.photos/1200/400/?random=2">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://picsum.photos/1200/400/?random=3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="section02" style="margin-top: 150px;">
+    <div class="container">
+      <div class="row gy-3 gx-md-3">
+        <div class=" col-xs-8 col-md-4">
+          <div class="card border border-black">
+          <img class="card-img-top" src="https://picsum.photos/600/400/?random=1" style="object-fit:cover;">
+          <div class="bg-white p-3">
+          <p>良好筆記本基於精品當時理想地區兩人此時推坑大魔王，面臨電池領域財政也是作家指標，團隊狀態案件是的辦公商家，陽光工藝理想那天加油</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-xs-8 col-md-4">
+        <div class="card border border-black">
+        <img class="card-img-top" src="https://picsum.photos/600/400/?random=2" style="object-fit:cover;">
+        <div class="bg-white p-3">
+        <p>良好筆記本基於精品當時理想地區兩人此時推坑大魔王，面臨電池領域財政也是作家指標，團隊狀態案件是的辦公商家，陽光工藝理想那天加油</p>
+        </div>
+      </div>
+    </div>
+    <div class=" col-xs-8 col-md-4">
+      <div class="card border border-black">
+      <img class="card-img-top" src="https://picsum.photos/600/400/?random=3" style="object-fit:cover;">
+      <div class="bg-white p-3">
+      <p>良好筆記本基於精品當時理想地區兩人此時推坑大魔王，面臨電池領域財政也是作家指標，團隊狀態案件是的辦公商家，陽光工藝理想那天加油</p>
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+  </div>
+
+  <div id="section03 " style="margin-top: 150px;">
+  <div class="row bg-light p-0 m-0 align-items-center">
+    <div class="col-12 col-md-6 p-0">
+      <img class="w-100" src="https://picsum.photos/800/400/?random=2" style="object-fit:cover;">
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="text-center mt-3">
+      <h1 >Coffee Shop</h1>
+      <p>
+        東京結構通知他也閲讀者化工哪裡讀書照片，最終萬元一般紛紛也在贏得但我，儘快顯然責任哪裡程式適合無論從而高達設立花園人大運作兩年交通，大聲貢獻友情感情亞洲專利蒐集電視劇年代，有可能加大專利，適當引起崗位無線他說，第二次液晶女朋友，業務沒有什麼相當，幾天依舊。
+        東京結構通知他也閲讀者化工哪裡讀書照片，最終萬元一般紛紛也在贏得但我，儘快顯然責任哪裡程式適合無論從而高達設立花園人大運作兩年交通，大聲貢獻友情感情亞洲專利蒐集電視劇年代，有可能加大專利，適當引起崗位無線他說，第二次液晶女朋友，業務沒有什麼相當，幾天依舊。
+      </p>
+      <button type="button" class="btn btn-success">VIEW COLLECTION</button>
+    </div>
+    </div>
+
+    <div class="col-12 col-md-6 d-none d-md-block">
+      <div class="text-center mt-3">
+      <h1>Coffee Shop</h1>
+      <p>
+        東京結構通知他也閲讀者化工哪裡讀書照片，最終萬元一般紛紛也在贏得但我，儘快顯然責任哪裡程式適合無論從而高達設立花園人大運作兩年交通，大聲貢獻友情感情亞洲專利蒐集電視劇年代，有可能加大專利，適當引起崗位無線他說，第二次液晶女朋友，業務沒有什麼相當，幾天依舊。
+        東京結構通知他也閲讀者化工哪裡讀書照片，最終萬元一般紛紛也在贏得但我，儘快顯然責任哪裡程式適合無論從而高達設立花園人大運作兩年交通，大聲貢獻友情感情亞洲專利蒐集電視劇年代，有可能加大專利，適當引起崗位無線他說，第二次液晶女朋友，業務沒有什麼相當，幾天依舊。
+      </p>
+      <button type="button" class="btn btn-success">VIEW COLLECTION</button>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 p-0">
+      <img class="w-100" src="https://picsum.photos/800/400/?random=4" style="object-fit:cover;">
+    </div>
+    <div class="col-12 col-md-6 d-md-none">
+      <div class="text-center mt-3">
+      <h1>Coffee Shop</h1>
+      <p>
+        東京結構通知他也閲讀者化工哪裡讀書照片，最終萬元一般紛紛也在贏得但我，儘快顯然責任哪裡程式適合無論從而高達設立花園人大運作兩年交通，大聲貢獻友情感情亞洲專利蒐集電視劇年代，有可能加大專利，適當引起崗位無線他說，第二次液晶女朋友，業務沒有什麼相當，幾天依舊。
+        東京結構通知他也閲讀者化工哪裡讀書照片，最終萬元一般紛紛也在贏得但我，儘快顯然責任哪裡程式適合無論從而高達設立花園人大運作兩年交通，大聲貢獻友情感情亞洲專利蒐集電視劇年代，有可能加大專利，適當引起崗位無線他說，第二次液晶女朋友，業務沒有什麼相當，幾天依舊。
+      </p>
+      <button type="button" class="btn btn-success">VIEW COLLECTION</button>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <section id="section04" class="vh-100">
+    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703506534758!2d121.41732691544698!3d25.04413414403811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1637644118119!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <div id="sections05" class="bg-light p-5">
+    <div class="container ">
+      <h1 class="text-center">聯絡我們</h1>
+      <p class="fs-3 fw-bold">泰山咖啡莊園，傳承熱情 coding 精神</p>
+      <p>任何服務問題或建議，歡迎您透過客服表單告知我們，謝謝!</p>
+
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label">姓名</label>
+        <div class="input-group">
+        <input type="text" class="form-control" id="validationCustom01" required>
+        
+        <div class="input-group-text border-end-0">
+          <label class="form-check-label " for="gender">
+          先生
+          </label>
+          <input class="form-check-input " name="gender" type="radio" id="gender">
+          </div>
+          <div class="input-group-text border-start-0">
+          <label class="form-check-label " for="gender">
+          女士
+          </label>
+          <input class="form-check-input" name="gender" type="radio" id="gender">
+        </div>
+        </div>
+        <div class="valid-feedback">
+          成功
+        </div>
+        <div class="invalid-feedback">
+          請輸入first name
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom02" class="form-label">電話</label>
+        <input type="text" class="form-control" id="validationCustom02" required>
+        <div class="valid-feedback">
+          成功
+        </div>
+        <div class="invalid-feedback">
+          請輸入last name
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">電子信箱</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="valid-feedback">
+          成功
+        </div>
+        <div class="invalid-feedback">
+          請輸入城市
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">問題類型</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">餐飲建議</option>
+          <option>員工投訴</option>
+          <option>行政建議</option>
+        </select>
+        <div class="valid-feedback">
+          成功
+        </div>
+        <div class="invalid-feedback">
+          請選擇
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="validationTextarea" class="form-label">意見需求</label>
+        <textarea class="form-control" id="validationCustom05" style="height: 100px;"></textarea>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="invalidCheck" >
+          <label class="form-check-label" for="invalidCheck">
+            訂閱泰山莊園最新資訊
+          </label>
+        </div>
+      </div>
+      <div class="col text-center">
+        <button class="btn btn-primary" type="submit">送出</button>
+      </div>
+    </form>
+    </div>
+  </div>
+
+<div id="section06" class="bg-dark">
+  <div class="row text-light p-5">
+    <div class="col">
+      <img src="https://picsum.photos/200/200/?random=10" class="rounded-circle">
+    </div>
+    <div class="col">
+      <p class="fw-bold">Address</p>
+      <p>1234 Stree Name</p>
+      <p>City, AA 99999</p>
+    </div>
+    <div class="col">
+      <p class="fw-bold">Links</p>
+      <p>Website bulider</p>
+      <p>Download for Windows</p>
+      <p>Download for Mac</p>
+    </div>
+    <div class="col">
+      <p class="fw-bold">Contacts</p>
+      <p>Email:support@mobirise.com</p>
+      <p>Phone:+1 (0) 000 0000 001</p>
+      <p>Fax:+1 (0) 000 0000 002</p>
+    </div>
+  </div>
+  <p class="text-light text-center">
+    ©Copyright 2021 KaiFu Change - All rights reserved.
+  </p>
+</div>
+
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
